@@ -56,6 +56,7 @@ async def start(event):
                       buttons=[
                               [Button.inline("SET THUMB.", data="set"),
                                Button.inline("REM THUMB.", data="rem")],
-                              [Button.url("🔰 Maintained and Developed by 🔰", url="hhttps://t.me/restrgb")]])
+                              [Button.url("🔰 Bot owner 🔰", url="https://t.me/unique_1415")]])
+    
     
     
