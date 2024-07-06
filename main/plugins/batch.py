@@ -6,7 +6,7 @@ Plugin for both public & private channels!
 ...................
 """
 import logging
-import time, os, asyncio
+import time, os, asyncio,sys
 
 from .. import bot as Invix
 from .. import userbot, Bot, AUTH, SUDO_USERS
@@ -96,7 +96,13 @@ async def _batch(event):
             conv.cancel()
             ids.clear()
             batch.clear()
-
+          
+@Invix.on(events.NewMessage(incoming=True, from_users=SUDO_USERS, pattern='/stop'))
+async def resta(event):
+    await event.reply("Stopped✅")
+    os.execl(sys.executable, sys.executable, "-m", "main")     
+    await event.edit("Bot Restarted..!!")
+  
 @Invix.on(events.callbackquery.CallbackQuery(data="cancel"))
 async def cancel(event):
     ids.clear()
