@@ -34,9 +34,4 @@ if __name__ == "__main__":
     logger.info("Bot Started :)")
     bot.run_until_disconnected()
     
-            patt = Path(a.name)
-            plugin_name = patt.stem
-            load_plugins(plugin_name.replace(".py", ""))
-    logger.info("Bot Started :)")
-    bot.run_until_disconnected()
-    
+           
