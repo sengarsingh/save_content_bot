@@ -133,7 +133,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                 progress=progress_for_pyrogram,
                 progress_args=(
                     client,
-                    "**DOWNLOADING:**\n**bot made by Mr. Invisible**",
+                    "**DOWNLOADING**",
                     edit,
                     time.time()
                 )
@@ -186,7 +186,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     progress=progress_for_pyrogram,
                     progress_args=(
                         client,
-                        '**UPLOADING:**\n**bot made by Mr. Invisible**',
+                        '**UPLOADING**',
                         upm,
                         time.time()
                     )
@@ -229,7 +229,7 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
                     progress=progress_for_pyrogram,
                     progress_args=(
                         client,
-                        '**UPLOADING:**\n**bot made by Mr. Invisible**',
+                        '**UPLOADING**',
                         upm,
                         time.time()
                     )
@@ -250,4 +250,4 @@ async def get_msg(userbot, client, sender, edit_id, msg_link, i, file_n):
 async def get_bulk_msg(userbot, client, sender, msg_link, i):
     x = await client.send_message(sender, "Processing!")
     file_name = ''
-    await get_msg(userbot, client, sender, x.id, msg_link, i, file_name) 
+    await get_msg(userbot, client, sender, 
