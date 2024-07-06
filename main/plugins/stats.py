@@ -59,6 +59,3 @@ async def stats(event):
     
     await event.reply(f"{stats}")
    #duz.edit(stats)
-
-
-
